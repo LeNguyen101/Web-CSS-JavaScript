@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>177166 レーヒコイグエン</title>
+<link rel="stylesheet" href="css/form.css" />
+<script src="js/regist.js"></script>
+
+</head>
+
+<body>
+<!-- ↓ここに入力 -->
+<h1>会員登録(かいいんとうろく)</h1>
+    <div id="result"></div>
+    
+<p class="right">
+    <input type="button" value="戻る" onclick="history.back()">
+
+<form>
+    
+<p>
+    
+ <label><span>出席番号 :</span>
+ <input type="text"
+        name="name"
+        maxlength="4"
+        pattern="[A-Z]{1}[0-9]{3}"
+        title="英字１文字+数字３文字"
+        placeholder="X000"
+        required>
+ </label>
+</p>
+<p>
+<label><span>お名前 :</span>
+<input type ="text" name="name" maxlength="30" required placeholder>
+</label>
+</p>
+<p>
+<label><span>パスワード:</span>
+<input type="password"
+       name="password"maxlength="20"
+       required
+       pattern="[a-z]{7}[0-9]{20}"
+       title="半角英数7文字以上20文字以下。"
+       placeholder="abc1234" required>
+</label>
+</p>
+<p>
+<label><span>メールアドレス:</span>
+<input type="email" name="email" maxlength="30"
+title="aaabbb.comのような形で記入ください。"
+       placeholder=" aaa@bbbbb.com" required>
+</label>
+</p>
+<p>
+<label><span>性別</span>
+<span class="radio">
+<label> <input type="radio" name="gender"value="male" checked>男</label>
+<label> <input type="radio" name="gender"value="female">女</label>
+</span>
+</label>
+</p>
+<p>
+<label>
+<span>国籍(こくせき)</span>
+<select name="nationality">
+<option value="japan">日本</option>
+<option value="bangladesh">バングラデシュ</option>
+<option value="china">中国"</option>
+<option value="korea">韓国</option>
+<option value="mongolia">モンゴル</option>
+<option value="myanmar">ミャンマー</option>
+<option value="nepal">ネパール</option>
+<option value="srilanka">スリランカ</option>
+<option value="taiwan">台湾</option>
+<option value="vietnam">べトナム</option>
+</select>
+</label></p>
+<p>
+<label>
+<span>生年月日</span>
+<input type="date" name="date"  max="1970/04/01" min="2000/04/30"><required>
+</label>
+</p>
+<p>
+<label>
+<span>あなたの国のあいさつは？></span>
+    <textarea name="greeting" class="txtfield" placeholder="こんにちは"></textarea>
+</label>
+</p>
+<p>
+<label>
+<span>好きな色は？</span>
+<span>
+<input type="color" name="color" list="colorType" value="#000000">
+<datalist id="colorType">
+<option value="#000000"></option>
+<option value="#FF0000"></option>
+<option value="Red"></option>
+</datalist>
+</span>
+</label>
+</p>
+<p>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+p {
+color:red;
+}
+
+header p:nth-child(2){
+ color: blue;
+}
+
+header p:nth-child(3){
+ color: green;
+}
+
+h1,p{
+font-size:2en;
+}
+
+
+
+h1{
+ background-color:red;
+ color:#220022;
+ text-align: center;
+}
+
+
+ ul li{
+ display:inline;
+ text-decoration:none;
+ list-style-type:none;
+ padding-right:30px;
+ border-right:solid 1px #111
+}
+
+ ul {
+ background-color:yellow;
+ color: white;
+}
+ 
+footer{
+ background-color:red;
+ text-align:center;
+ padding:1px;
+ margin:2px;
+}
+table {
+ border-collapse: collapse;
+ text-align: center;
+ 
+}
+td {
+ border:solid 1px purple;
+}
+th {
+ border:solid 1px blue;
+}
+td a:hover{
+ color: #f01add;
+}
+table tr th:first-child{
+ background: black;
+ color: white;
+}
+

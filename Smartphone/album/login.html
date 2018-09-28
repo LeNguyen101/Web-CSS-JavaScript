@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>s177166　レーヒコイグエン</title>
+<link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+<h1>ログイン</h1>
+  
+    <p class="right">
+        <input type="button" value="戻る" onclick="history.back()"> 
+        
+        <input type="button" value="新規登録" onclick="location.href='regist.html'"> 
+    </p>
+ 
+<form>
+        
+    <p>
+        <label><span>出席番号 :</span><br>
+        <input type="text"
+               name="name"
+               maxlength="4"
+               pattern="[A-Z]{1}[0-9]{3}"
+               title="英字１文字+数字３文字"
+               placeholder="X000" required>
+               
+        </label>
+    </p>
+        
+    <p>
+        <label><span>パスワード :</span><br>
+     <input type="password"
+            name="password"
+            maxlength="20" 
+            pattern="[A-Za-z0-9]{7,}"
+            title="半角英数7文字以上20文字以下。"
+            placeholder="abc1234" required>
+     </label>
+    </p>
+        
+    <p>
+            
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </p>
+  </form>
+ </body>
+</html>
